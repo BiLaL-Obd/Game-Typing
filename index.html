@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Typing</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <div class="game">
+      <h1 class="title">Typing Game</h1>
+      <div class="container">
+        <div class="choose-lvl">
+          <label for="level">Change Your Level From Here </label>
+          <select name="" id="level">
+            <option></option>
+            <option value="Easy" data-lvl="Easy">Easy</option>
+            <option value="Normal" data-lvl="Normal">Normal</option>
+            <option value="Hard" data-lvl="Hard">Hard</option>
+          </select>
+        </div>
+        <div class="info">
+          You in Level <span class="lvl"></span> & Your Seconds is
+          <span class="seconds"></span>
+        </div>
+        <div class="restart">restart</div>
+        <div class="start">Start Game</div>
+        <div class="show-word"></div>
+        <input type="text" class="input" id="" />
+        <div class="upcoming-word">Words Well Show Here</div>
+        <div class="control">
+          <div class="time">Time Left <span class="sec">0</span> seconds</div>
+          <div class="total">
+            Your Score: <span class="score">0</span> From
+            <span class="length">0</span>
+          </div>
+        </div>
+        <div class="finish"></div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
