@@ -23,6 +23,7 @@ body {
 .container {
   width: 900px;
   margin: 15px auto;
+  max-width: 100%;
 }
 .info {
   background-color: white;
@@ -32,6 +33,11 @@ body {
 }
 .info span {
   color: #03a9f4;
+}
+@media (max-width: 767px) {
+  .info span {
+    display: block;
+  }
 }
 .info span::before {
   content: "[ ";
@@ -130,6 +136,11 @@ input:focus {
   gap: 20px;
   margin: 15px 0;
   font-size: 18px;
+}
+@media (max-width: 767px) {
+  .choose-lvl {
+    flex-direction: column;
+  }
 }
 .choose-lvl select {
   width: 180px;
